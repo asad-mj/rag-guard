@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-guard"
+version = "1.0.0"
+description = "Zero-latency semantic guardrails, prompt injection defense, and PII redaction for LLM/RAG systems."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Muhammad Asad"}
+]
+dependencies = [
+    "pydantic>=2.7.0",
+    "numpy>=1.26.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rag_guard*"]
